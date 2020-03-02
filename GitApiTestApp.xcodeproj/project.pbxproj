@@ -3,10 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0531A9CB240D27DB00084C1F /* RepositoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531A9CA240D27DB00084C1F /* RepositoryItem.swift */; };
+		0531A9CD240D4C0E00084C1F /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531A9CC240D4C0E00084C1F /* AlertManager.swift */; };
+		0531A9CF240D4C3600084C1F /* CustomDateForrmatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531A9CE240D4C3600084C1F /* CustomDateForrmatter.swift */; };
+		0531A9D1240D4E5300084C1F /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531A9D0240D4E5300084C1F /* WebService.swift */; };
+		0531A9D3240D576800084C1F /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531A9D2240D576800084C1F /* ApiError.swift */; };
+		0531A9D7240D853000084C1F /* RepositoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0531A9D5240D853000084C1F /* RepositoryCell.swift */; };
+		0531A9D8240D853000084C1F /* RepositoryCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0531A9D6240D853000084C1F /* RepositoryCell.xib */; };
+		05945F12240D23EB00CF7106 /* SDWebImage in Frameworks */ = {isa = PBXBuildFile; productRef = 05945F11240D23EB00CF7106 /* SDWebImage */; };
+		05945F14240D242900CF7106 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05945F13240D242900CF7106 /* RepositoriesViewController.swift */; };
+		05945F17240D26B200CF7106 /* RepositoriesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05945F16240D26B200CF7106 /* RepositoriesViewModel.swift */; };
 		05AF538A240CFA0000A09CA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AF5389240CFA0000A09CA2 /* AppDelegate.swift */; };
 		05AF538C240CFA0000A09CA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05AF538B240CFA0000A09CA2 /* SceneDelegate.swift */; };
 		05AF5391240CFA0000A09CA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05AF538F240CFA0000A09CA2 /* Main.storyboard */; };
@@ -21,6 +31,15 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0531A9CA240D27DB00084C1F /* RepositoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryItem.swift; sourceTree = "<group>"; };
+		0531A9CC240D4C0E00084C1F /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
+		0531A9CE240D4C3600084C1F /* CustomDateForrmatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDateForrmatter.swift; sourceTree = "<group>"; };
+		0531A9D0240D4E5300084C1F /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		0531A9D2240D576800084C1F /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		0531A9D5240D853000084C1F /* RepositoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryCell.swift; sourceTree = "<group>"; };
+		0531A9D6240D853000084C1F /* RepositoryCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryCell.xib; sourceTree = "<group>"; };
+		05945F13240D242900CF7106 /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
+		05945F16240D26B200CF7106 /* RepositoriesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewModel.swift; sourceTree = "<group>"; };
 		05AF5386240CFA0000A09CA2 /* GitApiTestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GitApiTestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05AF5389240CFA0000A09CA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05AF538B240CFA0000A09CA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -41,12 +60,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05945F12240D23EB00CF7106 /* SDWebImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0531A9D4240D850A00084C1F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				0531A9D5240D853000084C1F /* RepositoryCell.swift */,
+				0531A9D6240D853000084C1F /* RepositoryCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		05945F15240D269100CF7106 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				05945F16240D26B200CF7106 /* RepositoriesViewModel.swift */,
+				05945F13240D242900CF7106 /* RepositoriesViewController.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
 		05AF537D240CFA0000A09CA2 = {
 			isa = PBXGroup;
 			children = (
@@ -76,8 +114,8 @@
 		05AF539D240CFA0B00A09CA2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				05AF539F240CFA5800A09CA2 /* Plists */,
 				05AF539E240CFA4C00A09CA2 /* Storyboards */,
+				05AF539F240CFA5800A09CA2 /* Plists */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -85,8 +123,8 @@
 		05AF539E240CFA4C00A09CA2 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				05AF5394240CFA0200A09CA2 /* LaunchScreen.storyboard */,
 				05AF538F240CFA0000A09CA2 /* Main.storyboard */,
+				05AF5394240CFA0200A09CA2 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -125,6 +163,7 @@
 		05AF53A2240CFA7D00A09CA2 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				05945F15240D269100CF7106 /* Repositories */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -132,6 +171,7 @@
 		05AF53A3240CFA8600A09CA2 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0531A9D4240D850A00084C1F /* Cells */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -139,6 +179,9 @@
 		05AF53A4240CFA8D00A09CA2 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				0531A9CC240D4C0E00084C1F /* AlertManager.swift */,
+				0531A9CE240D4C3600084C1F /* CustomDateForrmatter.swift */,
+				0531A9D0240D4E5300084C1F /* WebService.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -166,6 +209,8 @@
 		05AF53A7240CFAAD00A09CA2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				0531A9CA240D27DB00084C1F /* RepositoryItem.swift */,
+				0531A9D2240D576800084C1F /* ApiError.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,6 +231,9 @@
 			dependencies = (
 			);
 			name = GitApiTestApp;
+			packageProductDependencies = (
+				05945F11240D23EB00CF7106 /* SDWebImage */,
+			);
 			productName = GitApiTestApp;
 			productReference = 05AF5386240CFA0000A09CA2 /* GitApiTestApp.app */;
 			productType = "com.apple.product-type.application";
@@ -214,6 +262,9 @@
 				Base,
 			);
 			mainGroup = 05AF537D240CFA0000A09CA2;
+			packageReferences = (
+				05945F10240D23EB00CF7106 /* XCRemoteSwiftPackageReference "SDWebImage" */,
+			);
 			productRefGroup = 05AF5387240CFA0000A09CA2 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -231,6 +282,7 @@
 				05AF5396240CFA0200A09CA2 /* LaunchScreen.storyboard in Resources */,
 				05AF5393240CFA0200A09CA2 /* Assets.xcassets in Resources */,
 				05AF5391240CFA0000A09CA2 /* Main.storyboard in Resources */,
+				0531A9D8240D853000084C1F /* RepositoryCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,12 +295,20 @@
 			files = (
 				05AF53B2240CFB6100A09CA2 /* UITableView+Methods.swift in Sources */,
 				05AF53B0240CFB6100A09CA2 /* UIView+Layers.swift in Sources */,
+				0531A9D1240D4E5300084C1F /* WebService.swift in Sources */,
 				05AF53AB240CFB4500A09CA2 /* Storyboardable.swift in Sources */,
+				0531A9CF240D4C3600084C1F /* CustomDateForrmatter.swift in Sources */,
+				0531A9CB240D27DB00084C1F /* RepositoryItem.swift in Sources */,
 				05AF538A240CFA0000A09CA2 /* AppDelegate.swift in Sources */,
+				05945F14240D242900CF7106 /* RepositoriesViewController.swift in Sources */,
+				0531A9D3240D576800084C1F /* ApiError.swift in Sources */,
 				05AF53B1240CFB6100A09CA2 /* PrintExtensions.swift in Sources */,
 				05AF53B3240CFB6100A09CA2 /* Array.swift in Sources */,
+				0531A9CD240D4C0E00084C1F /* AlertManager.swift in Sources */,
 				05AF538C240CFA0000A09CA2 /* SceneDelegate.swift in Sources */,
+				05945F17240D26B200CF7106 /* RepositoriesViewModel.swift in Sources */,
 				05AF53AA240CFB4500A09CA2 /* ReusableCell.swift in Sources */,
+				0531A9D7240D853000084C1F /* RepositoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +506,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		05945F10240D23EB00CF7106 /* XCRemoteSwiftPackageReference "SDWebImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImage";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.5.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		05945F11240D23EB00CF7106 /* SDWebImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 05945F10240D23EB00CF7106 /* XCRemoteSwiftPackageReference "SDWebImage" */;
+			productName = SDWebImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 05AF537E240CFA0000A09CA2 /* Project object */;
 }
